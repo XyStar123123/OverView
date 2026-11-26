@@ -1,0 +1,36 @@
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgb(17 24 39 / 40%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 50;
+  padding: var(--sp-4);
+}
+
+.dialog {
+  background: var(--ov-surface);
+  border: 1px solid var(--ov-border);
+  border-radius: var(--r-card);
+  width: 100%;
+  max-width: 440px;
+  padding: var(--sp-6);
+}
+
+.title {
+  font-size: var(--fs-h3);
+  margin-bottom: var(--sp-3);
+}
+
+.body {
+  color: var(--ov-text-secondary);
+  font-size: 13px;
+  margin-bottom: var(--sp-4);
+}
+
+.actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: var(--sp-2);
+}

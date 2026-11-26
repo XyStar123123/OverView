@@ -1,0 +1,44 @@
+/* Design tokens — one color per state (ARCHITECTURE.md §6.1).
+   These custom properties are the single source of truth for state colors;
+   components never hardcode state colors. */
+:root {
+  /* neutrals */
+  --ov-bg: #f9fafb;
+  --ov-surface: #ffffff;
+  --ov-border: #e5e7eb;
+  --ov-text: #111827;
+  --ov-text-secondary: #6b7280;
+
+  /* state colors: gray, blue, amber, red, violet, green, gray-400 */
+  --st-gray: #6b7280;
+  --st-blue: #2563eb;
+  --st-amber: #b45309;
+  --st-red: #dc2626;
+  --st-violet: #7c3aed;
+  --st-green: #16a34a;
+  --st-gray400: #9ca3af;
+
+  /* spacing scale (4px) */
+  --sp-1: 4px;
+  --sp-2: 8px;
+  --sp-3: 12px;
+  --sp-4: 16px;
+  --sp-6: 24px;
+  --sp-8: 32px;
+
+  /* radii */
+  --r-card: 8px;
+  --r-control: 6px;
+
+  /* typography */
+  --font-sans: "Segoe UI", system-ui, -apple-system, "Helvetica Neue", Arial, sans-serif;
+  --font-mono: ui-monospace, Consolas, "Cascadia Mono", monospace;
+  --fs-base: 14px;
+  --fs-table: 13px;
+  --fs-h1: 20px;
+  --fs-h2: 18px;
+  --fs-h3: 16px;
+
+  --sidebar-w: 240px;
+  --content-max: 1200px;
+}

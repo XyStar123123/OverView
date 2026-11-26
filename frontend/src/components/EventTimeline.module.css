@@ -1,0 +1,104 @@
+.timeline {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.item {
+  display: flex;
+  gap: var(--sp-3);
+}
+
+.rail {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: none;
+  width: 14px;
+}
+
+.node {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--ov-border);
+  margin-top: 4px;
+  flex: none;
+}
+
+.nodeLive {
+  background: var(--st-blue);
+  animation: pulse 1.2s ease-in-out infinite;
+}
+
+.nodeFailed {
+  background: var(--st-red);
+}
+
+.line {
+  width: 1px;
+  flex: 1;
+  background: var(--ov-border);
+  margin-top: 2px;
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.35;
+  }
+}
+
+.body {
+  flex: 1;
+  min-width: 0;
+  padding-bottom: var(--sp-4);
+}
+
+.head {
+  display: flex;
+  align-items: baseline;
+  gap: var(--sp-2);
+}
+
+.seq {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--ov-text-secondary);
+  min-width: 20px;
+}
+
+.type {
+  font-weight: 600;
+  font-size: 13px;
+}
+
+.time {
+  margin-left: auto;
+  color: var(--ov-text-secondary);
+  font-size: 12px;
+  white-space: nowrap;
+}
+
+.toggle {
+  margin-top: var(--sp-1);
+  background: none;
+  border: none;
+  padding: 0;
+  font-size: 12px;
+  color: var(--st-blue);
+}
+
+.payload {
+  margin: var(--sp-2) 0 0;
+  padding: var(--sp-3);
+  background: var(--ov-bg);
+  border: 1px solid var(--ov-border);
+  border-radius: var(--r-control);
+  font-family: var(--font-mono);
+  font-size: 12px;
+  overflow-x: auto;
+}
